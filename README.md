@@ -12,28 +12,46 @@
 
 ## 使用方法
 
-### 安装
+### 安装（在 Claude Code 中启用）
 
-将此目录复制到 `~/.claude/skills/mckee-storycraft/`：
+Claude Code 会从 `~/.claude/skills/<name>/SKILL.md` 识别 skill。把这个仓库复制到该目录，重启 Claude Code 即可生效：
 
 ```bash
+# 1. 创建目标目录
 mkdir -p ~/.claude/skills/mckee-storycraft
+
+# 2. 把本仓库内容复制进去
 cp -R . ~/.claude/skills/mckee-storycraft/
+
+# 3. （可选）验证安装
+ls ~/.claude/skills/mckee-storycraft/SKILL.md
 ```
+
+> 目录名必须是 `mckee-storycraft`（与 `SKILL.md` 里的 `name` 字段一致），Claude Code 才能正确把它注册成 `/mckee-storycraft` 命令。复制后需要**重启 / 新开会话**，skill 才会被加载。
 
 ### 在 Claude Code 中调用
 
-直接输入 `/mckee-storycraft` + 话题即可：
+安装后，在对话中输入 `/mckee-storycraft` 或直接提问即可触发：
 
 | 用法 | 示例 | 说明 |
 |------|------|------|
-| 不加参数 | `/mckee-storycraft` | 加载能力概览与 references 索引 |
-| 按话题查询 | `/mckee-storycraft 对立原则` | 查找对应对立力量、场景设计、人物弧光等 |
-| 按章节加载 | `/mckee-storycraft ch04` | 直接加载指章节（ch01–ch04） |
-| 剧本诊断 | 粘贴一段剧本草稿 | 按麦基场景思想/对立原则/结构阶梯/主题 做结构化体检、给出可执行改写建议 |
-| 浏览目录 | `/mckee-storycraft 有哪些章节` | 查看完整章节索引 |
+| 加载概览 | `/mckee-storycraft` | 加载能力概览与 references 索引 |
+| 理论查询 | `/mckee-storycraft 对立原则` | 按框架名检索对应内容 |
+| 章节加载 | `/mckee-storycraft ch04` | 加载指定章节（ch01–ch04） |
+| 浏览目录 | `/mckee-storycraft 有哪些章节` | 查看完整章节/话题索引 |
+| 剧本诊断 | `/mckee-storycraft` + 粘贴剧本草稿 | 按场景思想/对立/结构阶梯/主题 做结构化体检 |
+| 改写 / 重构 | 粘贴场景或大纲，说明改进方向 | 基于诊断重建场景或故事骨架 |
 
-> 若要诊断 / 改写 / 重构剧本，Agent 会先确认类型、篇幅、目标观众、主角等最小信息，再动手。
+### 一次真实的编剧工作流演示
+
+> 下面是一个"从诊断到改写"的完整示例，帮助你理解实际怎么用：
+
+1. **提交草稿**：你 `Ctrl+V` 粘贴一段对白戏，输入"帮我看看这段为什么没劲"。
+2. **Agent 先澄清**：会问你类型/篇幅/观众/主角（若你没给出），或在你已注明时直接开评。
+3. **Agent 出诊断**：按"总体印象 → 逐要素体检 → 问题清单 → 改写建议"输出。
+4. **你决定落笔**：挑它给的前 2–3 条改写建议用于重写；需要更具体的动作可继续追问"这段对白怎么加潜文本"。
+
+> Agent 遵循一个硬约束：**先给可执行动作，再谈原理**；且始终"回到原理，而不是找范本"，不会直接替你把故事写死。
 
 ### 核心框架速览
 
