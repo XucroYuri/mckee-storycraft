@@ -88,3 +88,7 @@ ls ~/.claude/skills/mckee-storycraft/SKILL.md
 | `references/cheatsheet.md` | 故事原理速查表 |
 | `references/glossary.md` | 麦基核心术语表（中英对照、双译名） |
 | `references/patterns.md` | 可复用的故事模式与结构 |
+
+## 路线图
+
+想了解这个 Skill 的演进计划（v1.1 剧本工具化、v2.0 主动式工作台等），以及如何提出新能力，参见 [docs/ROADMAP.md](docs/ROADMAP.md)。
