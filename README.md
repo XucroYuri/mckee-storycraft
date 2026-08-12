@@ -1,5 +1,7 @@
 # McKee Storycraft — Claude Code Skill
 
+> **最新版本：v1.1.0 · 剧本工具化** — 新增 6 项生产能力：剧本自动诊断、三幕大纲重构模板、对白潜文本改写、人物弧光/两难生成、类型惯例对照、场景价值检测。详见 [docs/ROADMAP.md](docs/ROADMAP.md) 与 [Github Releases](https://github.com/XucroYuri/mckee-storycraft/releases)。
+
 ## 罗伯特·麦基是谁？
 
 **罗伯特·麦基（Robert McKee）** 是美国著名编剧导师、作家，被誉为"好莱坞编剧教父"。他的代表作《故事：材质、结构、风格和银幕剧作的原理》（*Story: Substance, Structure, Style and the Principles of Screenwriting*）是全球编剧和故事创作者的必读经典，被翻译成 20 多种语言。
