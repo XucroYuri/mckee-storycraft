@@ -27,7 +27,7 @@ cp -R . ~/.claude/skills/mckee-storycraft/
 
 | 用法 | 示例 | 说明 |
 |------|------|------|
-| 不加参数 | `/mckee-storycraft` | 加载核心框架速览 |
+| 不加参数 | `/mckee-storycraft` | 加载能力概览与 references 索引 |
 | 按话题查询 | `/mckee-storycraft 对立原则` | 查找对应对立力量、场景设计、人物弧光等 |
 | 按章节加载 | `/mckee-storycraft ch04` | 直接加载指章节（ch01–ch04） |
 | 剧本诊断 | 粘贴一段剧本草稿 | 用麦基五要素做结构化体检、给出可执行改写建议 |
@@ -49,10 +49,13 @@ cp -R . ~/.claude/skills/mckee-storycraft/
 
 ## Contents（文件清单）
 
+该 skill 按标准结构组织：`SKILL.md`（调度器）+ `references/`（按需加载的知识库）。
+
 | 文件 | 说明 |
 |------|------|
-| `SKILL.md` | 主 skill 定义，包含全部核心框架与思维模型、问题驱动索引、剧本诊断协议 |
-| `cheatsheet.md` | 故事原理速查表 |
-| `glossary.md` | 麦基核心术语表（中英对照、双译名） |
-| `patterns.md` | 可复用的故事模式与结构 |
-| `chapters/` | 四部章节深入原文（作家之道、故事元素、故事设计、写作实践） |
+| `SKILL.md` | 主 skill 调度器：能力概述、工作模式、启动协议、诊断结构、质检清单、范围边界 |
+| `references/core-frameworks.md` | 十大核心框架、问题驱动索引、章节/话题索引 |
+| `references/chapters/` | 四部章节深入原文（作家之道、故事元素、故事设计、写作实践） |
+| `references/cheatsheet.md` | 故事原理速查表 |
+| `references/glossary.md` | 麦基核心术语表（中英对照、双译名） |
+| `references/patterns.md` | 可复用的故事模式与结构 |
