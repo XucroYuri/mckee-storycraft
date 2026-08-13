@@ -58,7 +58,7 @@ argument-hint: "输入：①话题/框架名（如：对立原则、激励事件
 | [references/patterns.md](references/patterns.md) | 技巧与设计模式（含诊断清单） | 按场景取用具体技法 |
 | [references/cheatsheet.md](references/cheatsheet.md) | 快速参考表与决策指南 | 需要速查/比例/对照时 |
 | [references/capabilities/](references/capabilities/)（工具化能力） | 6 个可复用的剧本生产工具（见下方清单） | 需要产出结构化剧本工作时按需加载对应工具 |
-| [references/genre-notes/](references/genre-notes/)（类型适配·条件触发） | 单类型深研适配（恐怖/惊悚、情景喜剧…） | **仅当 ①类型匹配 且 ②用户明确要求**按此类型方法论创作时加载 |
+| [references/genre-notes/](references/genre-notes/)（类型适配·条件触发） | 单类型深研适配（恐怖/惊悚、情景喜剧、少儿动画…） | **仅当 ①类型匹配 且 ②用户明确要求**按此类型方法论创作时加载 |
 
 > 知识点加载策略：先问清楚用户的真实诉求（查概念 vs 诊断 vs 改写），再决定只加载 `core-frameworks.md` 的相关小节，还是连带某章深入。不要一次性把全部 references 读完——只在需要时加载。
 
@@ -75,7 +75,7 @@ argument-hint: "输入：①话题/框架名（如：对立原则、激励事件
 | **类型惯例对照表** | 选型后该铺陈的期待场景/惯用手法，避免套路化也不缺骨相 | [genre-conventions.md](references/capabilities/genre-conventions.md) |
 | **场景价值检测** | 逐场景扫描"结尾价值是否正负转变"，揪出无转折的填充段 | [scene-value-check.md](references/capabilities/scene-value-check.md) |
 
-> **条件触发的类型适配（genre-notes/）**：`references/genre-notes/` 存单类型的深度方法论适配（恐怖/惊悚见 [references/genre-notes/horror.md](references/genre-notes/horror.md)；情景喜剧见 [references/genre-notes/sitcom.md](references/genre-notes/sitcom.md)；后续会持续按类型补充）。每个子类都以**硬性双门控**触发，缺一不可：① 用户明确表示类型为某类型；② 用户明确要求按该类型方法论创作/诊断/改写。不满足任一条件→**不套用类型适配，退回通用流程**，避免滥用。
+> **条件触发的类型适配（genre-notes/）**：`references/genre-notes/` 存单类型的深度方法论适配（恐怖/惊悚见 [references/genre-notes/horror.md](references/genre-notes/horror.md)；情景喜剧见 [references/genre-notes/sitcom.md](references/genre-notes/sitcom.md)；少儿动画见 [references/genre-notes/child-animation.md](references/genre-notes/child-animation.md)；后续会持续按类型补充）。每个子类都以**硬性双门控**触发，缺一不可：① 用户明确表示类型为某类型；② 用户明确要求按该类型方法论创作/诊断/改写。不满足任一条件→**不套用类型适配，退回通用流程**，避免滥用。
 
 ## 启动协议（诊断 / 改写 / 重构前请确认）
 
